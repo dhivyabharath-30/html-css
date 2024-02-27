@@ -7,8 +7,43 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        height: 50px;
       }
-      
+      .home{
+        color: white;
+        margin-left: 15px;
+        font-weight: bold;
+        font-family: arial;
+      }
+      .searchdiv{
+        flex: 1;
+        margin-left: 80px;
+        margin-right: 60px;
+      }
+      .search-bar{
+        height: 24px;
+        width: 100%;
+        border-radius: 12px;
+        border: none;
+        padding-left: 10px;
+        max-width: 500px;
+      }
+      .downloaddiv{
+        margin-right: 10px;
+      }
+      .download-button{
+        border-radius: 2px;
+        background-color: rgb(144, 67, 216);
+        color: white;
+        border-color: white;
+        border-style: solid;
+        height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        border-width: 1px;
+      }
     </style>
   </head>
   <body>
@@ -16,11 +51,11 @@
       <div class="home">
         <p>Home</p>
       </div>
-      <div class="search-bar">
+      <div class="searchdiv">
         <input class="search-bar" type="text" placeholder="search">
       </div>
-      <div class="download-button">
-        <button>Download</button>
+      <div class="downloaddiv">
+        <button class="download-button">Download</button>
       </div>
     </div>
   </body>
