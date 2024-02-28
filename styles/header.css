@@ -30,13 +30,20 @@
 }
 .search-button{
   height: 40px;
-  width: 60px;
+  width: 66px;
+  background-color: rgb(240,240,240);
+  border-style: solid;
+  border-color: rgb(187, 187, 187);
+  border-width: 1px;
+  margin-left: -1;
+  margin-right: 10px;
 }
 .voice-search-button{
   height: 40px;
   width: 40px;
   border: none;
   border-radius: 20px;
+  background-color: rgb(245, 245, 245);
 }
 .search-bar{
   flex: 1;
