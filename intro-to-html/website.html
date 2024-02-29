@@ -44,6 +44,33 @@
         cursor: pointer;
         border-width: 1px;
       }
+      .overlay{
+        display: flex;
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;align-items: center;
+      }
+      .model{
+        background-color: white;
+        width: 300px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        border-radius: 10px;
+      }
+      .model-title{
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .para{
+        font-family: Arial, Helvetica, sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -59,9 +86,11 @@
       </div>
     </div>
     <div class="overlay">
-      <p>Modal Title</p>
-      <p>This is a model</p>
-      <button>Close</button>
+      <div class="model">
+        <p class="model-title">Modal Title</p>
+        <p class="para">This is a model</p>
+        <button>Close</button>
+      </div>
     </div>
   </body>
 </html>
