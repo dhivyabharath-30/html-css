@@ -50,6 +50,7 @@
   border-width: 1px;
   margin-left: -1;
   margin-right: 10px;
+  position: relative;
 }
 .voice-search-button{
   height: 40px;
@@ -75,7 +76,6 @@
   font-size: 16px;
 }
 .search-icon{
-  margin-top: 4px;
   height: 25px;
 }
 .upload-icon{
@@ -107,4 +107,32 @@
 .current-user-picture{
   height: 32px;
   border-radius: 16px;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip{
+  opacity: 1;
+  transition: 0.15s;
+}
+.search-button,
+.voice-search-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
